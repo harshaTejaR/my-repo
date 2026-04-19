@@ -6,4 +6,10 @@ export function setupCounter(element) {
   }
   element.addEventListener('click', () => setCounter(counter + 1))
   setCounter(0)
+  console.log('Counter setup complete')
+  let char = ''
+  for (let i = 0; i < 5; i++) {
+    console.log(char+='#')
+    
+  }
 }
