@@ -294,3 +294,22 @@ code {
     border-right-color: var(--border);
   }
 }
+.pushable {
+  background: hsl(340deg 100% 32%);
+  border : none;
+  border-radius: 12px;
+  padding: 0;
+  cursor: pointer;
+}
+.front {
+  display: block;
+  padding: 12px 42px;
+  font-size: 1.25rem;
+  border-radius: 12px;
+  background: hsl(340deg 100% 47%);
+  transform: translateY(-4px);
+  color: white;
+}
+.pushable:focus:not(:focus-visible) {
+  outline: none;
+}

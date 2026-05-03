@@ -24,23 +24,25 @@ document.querySelector('#app').innerHTML = `
 
 <section id="next-steps">
   <div id="docs">
-    <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#documentation-icon"></use></svg>
-    <h2>Documentation</h2>
-    <p>Your questions, answered</p>
-    <ul>
-      <li>
-        <a href="https://vite.dev/" target="_blank">
-          <img class="logo" src=${viteLogo} alt="" />
-          Explore Vite
-        </a>
-      </li>
-      <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-          <img class="button-icon" src="${javascriptLogo}" alt="">
-          Learn more
-        </a>
-      </li>
-    </ul>
+    <p>Create a button here  </P>
+    <style>
+     .front {
+    will-change: transform;
+    transition: transform 250ms;
+  }
+  .pushable:hover .front {
+    transform: translateY(-6px);
+  }
+  .pushable:active .front {
+   
+    transform: translateY(-2px);
+  }
+    </style>
+    <button id="pushable" type="button" class="pushable" >
+    <span class="front">
+    Push Me
+    </span>
+    </button>
   </div>
   <div id="social">
     <svg class="icon" role="presentation" aria-hidden="true"><use href="/icons.svg#social-icon"></use></svg>
@@ -59,5 +61,5 @@ document.querySelector('#app').innerHTML = `
 <section id="spacer"></section>
 `
 
-setupCounter(document.querySelector('#counter'))
-button(document.querySelector('#button '))
+const resetCounter = setupCounter(document.querySelector('#counter'))
+button(resetCounter)
